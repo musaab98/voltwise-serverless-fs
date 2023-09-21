@@ -1,0 +1,83 @@
+service: voltwise-serverless-fs
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:Query
+            - dynamodb:Scan
+            - dynamodb:GetItem
+            - dynamodb:PutItem
+            - dynamodb:UpdateItem
+            - dynamodb:DeleteItem
+          Resource:
+            - Fn::GetAtt: [VoltwiseProductsDynamoDbTable, Arn]
+
+functions:
+  get-products:
+    handler: functions/get-products.handler
+    events:
+      - http:
+          path: products
+          method: get
+          cors: true
+  put-product:
+    handler: functions/put-product.handler
+    events:
+      - http:
+          path: products
+          method: post
+          cors: true
+  delete-product:
+    handler: functions/delete-product.handler
+    events:
+      - http:
+          path: products/{id}
+          method: delete
+          cors: true
+  update-product:
+    handler: functions/update-product.handler
+    events:
+      - http:
+          path: products/{id}
+          method: patch
+          cors: true
+
+
+resources:
+  Resources:
+    VoltwiseProductsDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        TableName: voltwise-products
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+package:
+  patterns:
+    - '!node_modules/**'
+    - '!src/**'
+    - '!public/**'
+    - '!.gitignore'
+    - '!package.json'
+    - '!package-lock.json'
+    - '!README.md'
+
+plugins:
+  - serverless-add-api-key
+
+custom:
+  apiKeys:
+    - name: voltwise-admin-key

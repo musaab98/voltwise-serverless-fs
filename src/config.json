@@ -1,0 +1,5 @@
+{
+  "api": { 
+    "invokeUrl": "https://i8miu9q7nc.execute-api.us-east-1.amazonaws.com/dev/"
+  } 
+}
