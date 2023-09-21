@@ -27,7 +27,7 @@ export default class ProductAdmin extends Component {
         "id": { S: id },
         "productname": { S: this.state.newproduct.productname }
       }
-      await axios.post(`${config.api.invokeUrl}/Products/${id}`, params);
+      await axios.post(`${config.api.invokeUrl}/products`, params);
       this.setState({ products: [...this.state.products, np] });
       this.setState({ newproduct: { "productname": "", "id": "" }});
     } catch (err) {
@@ -42,7 +42,7 @@ export default class ProductAdmin extends Component {
         "productname": name
       };
       console.log("PATCHING...");
-      await axios.patch(`${config.api.invokeUrl}/Products/${id}`, params);
+      await axios.patch(`${config.api.invokeUrl}/products/${id}`, params);
       // Find the index of the product to update
       const productIndex = this.state.products.findIndex(product => product.id.S === id);
       if (productIndex !== -1) {
@@ -62,7 +62,7 @@ export default class ProductAdmin extends Component {
   handleDeleteProduct = async (id, event) => {
     event.preventDefault();
     try {
-      await axios.delete(`${config.api.invokeUrl}/Products/${id}`);
+      await axios.delete(`${config.api.invokeUrl}/products/${id}`);
       const updatedProducts = [...this.state.products].filter(product => product.id.S !== id);
       this.setState({products: updatedProducts});
     }catch (err) {
@@ -72,7 +72,7 @@ export default class ProductAdmin extends Component {
 
   fetchProducts = async () => {
     try {
-      const res = await axios.get(`${config.api.invokeUrl}/Products`);
+      const res = await axios.get(`${config.api.invokeUrl}/products`);
       const products = res.data;
       this.setState({ products: products });
     } catch (err) {
