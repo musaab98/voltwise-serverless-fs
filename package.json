@@ -1,5 +1,6 @@
 {
   "name": "voltwise-serverless-fs",
+  "homepage": "http://musaab98.github.io/voltwise-serverless-fs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +22,8 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "serverless-add-api-key": "^4.2.1"
   }
 }
