@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Products from './components/Products';
 import ProductAdmin from './components/ProductAdmin';
 import Footer from './components/Footer';
+import './App.css';
+
 
 function App() {
   return (

@@ -93,7 +93,7 @@ export default class ProductAdmin extends Component {
     return (
       <Fragment>
         <section className="section">
-          <div className="content">
+          <div className="container">
             <h1>Product Admin</h1>
             <p className="subtitle is-5">Add and remove products using the form below:</p>
             <br />
