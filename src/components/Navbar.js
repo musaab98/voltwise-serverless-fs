@@ -12,13 +12,13 @@ export default class Navbar extends Component {
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a href="/" className="navbar-item">
+            <a href="/#" className="navbar-item">
               Home
             </a>
-            <a href="/products" className="navbar-item">
+            <a href="/#products" className="navbar-item">
               Products
             </a>
-            <a href="/admin" className="navbar-item">
+            <a href="/#admin" className="navbar-item">
               Admin
             </a>
           </div>
