@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/voltwise-serverless-fs/static/css/main.44d67954.css",
-    "main.js": "/voltwise-serverless-fs/static/js/main.9a2caecd.js",
+    "main.js": "/voltwise-serverless-fs/static/js/main.125ee2eb.js",
     "index.html": "/voltwise-serverless-fs/index.html",
     "main.44d67954.css.map": "/voltwise-serverless-fs/static/css/main.44d67954.css.map",
-    "main.9a2caecd.js.map": "/voltwise-serverless-fs/static/js/main.9a2caecd.js.map"
+    "main.125ee2eb.js.map": "/voltwise-serverless-fs/static/js/main.125ee2eb.js.map"
   },
   "entrypoints": [
     "static/css/main.44d67954.css",
-    "static/js/main.9a2caecd.js"
+    "static/js/main.125ee2eb.js"
   ]
 }
