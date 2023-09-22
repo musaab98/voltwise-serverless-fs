@@ -5,7 +5,7 @@ export default class ProductAdmin extends Component {
 
   state = {
     isEditMode: false,
-    isAdmin: window.location.pathname === '/admin',
+    isAdmin: new URL(window.location.href).hash === '#admin',
     updatedproductname: this.props.name
   }
 
@@ -26,7 +26,7 @@ export default class ProductAdmin extends Component {
     return (
       <div className="tile is-child box notification is-success">
         {
-          this.state.isAdmin && 
+          this.state.isAdmin &&
           <Fragment>
             <a href="/" onClick={this.handleProductEdit} className="product-edit-icon">
               <FontAwesomeIcon icon="edit" />
@@ -35,26 +35,26 @@ export default class ProductAdmin extends Component {
           </Fragment>
         }
         {
-          this.state.isEditMode 
+        this.state.isEditMode
           ? <div>
-              <p>Edit product name</p>
-              <input 
-                className="input is-medium"
-                type="text" 
-                placeholder="Enter name"
-                value={this.state.updatedproductname}
-                onChange={this.onAddProductNameChange}
-              />
-              <p className="product-id">id: { this.props.id }</p>
-              <button type="submit" 
-                className="button is-info is-small"
-                onClick={ this.handleEditSave }
-              >save</button>
-            </div>
+            <p>Edit product name</p>
+            <input
+              className="input is-medium"
+              type="text"
+              placeholder="Enter name"
+              value={this.state.updatedproductname}
+              onChange={this.onAddProductNameChange}
+            />
+            <p className="product-id">id: {this.props.id}</p>
+            <button type="submit"
+              className="button is-info is-small"
+              onClick={this.handleEditSave}
+            >save</button>
+          </div>
           : <div>
-              <p className="product-title">{ this.props.name }</p>
-              <p className="product-id">id: { this.props.id }</p>
-            </div>
+              <p className="product-title">{this.props.name}</p>
+              <p className="product-id">id: {this.props.id}</p>
+          </div>
         }
       </div>
     )

@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Product from './Product';
 import axios from "axios";
+import 'bulma/css/bulma.min.css';
 const config = require('../config.json');
 
 export default class ProductAdmin extends Component {
@@ -92,7 +93,7 @@ export default class ProductAdmin extends Component {
     return (
       <Fragment>
         <section className="section">
-          <div className="container">
+          <div className="content">
             <h1>Product Admin</h1>
             <p className="subtitle is-5">Add and remove products using the form below:</p>
             <br />

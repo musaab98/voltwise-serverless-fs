@@ -5,20 +5,20 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
-            <img src={process.env.PUBLIC_URL + "/voltwise-logo.png"} width="112" height="28" alt="hexal logo" />
+          <a className="navbar-item" href="/voltwise-serverless-fs/#">
+            <img src={process.env.PUBLIC_URL + "/voltwise-logo.png"} width="112" height="28" alt="voltwise logo" />
           </a>
         </div>
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a href="/#" className="navbar-item">
+            <a href="/voltwise-serverless-fs/#" className="navbar-item">
               Home
             </a>
-            <a href="/#products" className="navbar-item">
+            <a href="/voltwise-serverless-fs/#products" className="navbar-item">
               Products
             </a>
-            <a href="/#admin" className="navbar-item">
+            <a href="/voltwise-serverless-fs/#admin" className="navbar-item">
               Admin
             </a>
           </div>
@@ -26,10 +26,10 @@ export default class Navbar extends Component {
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a href="/register" className="button is-primary">
+                <a href="/voltwise-serverless-fs/#register" className="button is-primary">
                   <strong>Sign up</strong>
                 </a>
-                <a href="/login" className="button is-light">
+                <a href="/voltwise-serverless-fs/#login" className="button is-light">
                   Log in
                 </a>
               </div>
@@ -37,6 +37,6 @@ export default class Navbar extends Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
