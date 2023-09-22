@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <div className="box cta">
         <p className="has-text-centered">
-          <span className="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <span className="tag is-primary">New</span> Through creativity and invention, we seek new ways to sustain the world.
         </p>
       </div>
       <HomeContent />

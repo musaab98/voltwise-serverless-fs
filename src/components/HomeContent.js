@@ -12,7 +12,7 @@ export default function HomeContent() {
                     <div className="card-content">
                         <div className="content">
                             <h4>Energy conservation</h4>
-                            <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                            <p>At Voltwise Motors, our unwavering dedication to energy efficiency and sustainability is revolutionizing industry norms. Join us as we lead the way towards a brighter, greener future for all.</p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
@@ -26,8 +26,7 @@ export default function HomeContent() {
                     <div className="card-content">
                         <div className="content">
                             <h4>Water conservation</h4>
-                            <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                            sed risus.</p>
+                            <p>We recognize water's significance at Voltwise Motors. We implement water-saving practices in manufacturing and facilities. Choose Voltwise for energy efficiency and responsible water use.</p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
@@ -41,7 +40,7 @@ export default function HomeContent() {
                      <div className="card-content">
                         <div className="content">
                             <h4>Solar energy</h4>
-                            <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p>Harnessing solar power is central to our mission at Voltwise Motors. We integrate solar tech into vehicles and facilities to reduce our carbon footprint. Drive with us toward a solar-powered future.</p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
