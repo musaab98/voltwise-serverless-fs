@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/voltwise-serverless-fs/static/css/main.7a486121.css",
+    "main.js": "/voltwise-serverless-fs/static/js/main.c8a5c72a.js",
+    "index.html": "/voltwise-serverless-fs/index.html",
+    "main.7a486121.css.map": "/voltwise-serverless-fs/static/css/main.7a486121.css.map",
+    "main.c8a5c72a.js.map": "/voltwise-serverless-fs/static/js/main.c8a5c72a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a486121.css",
+    "static/js/main.c8a5c72a.js"
+  ]
+}
