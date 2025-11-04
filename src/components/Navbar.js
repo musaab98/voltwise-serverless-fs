@@ -27,7 +27,7 @@ export default class Navbar extends Component {
             <div className="navbar-item">
               <div className="buttons">
                 <a href="/voltwise-serverless-fs/#register" className="button is-primary">
-                  <strong>Sign up</strong>
+                  <strong>Register</strong>
                 </a>
                 <a href="/voltwise-serverless-fs/#login" className="button is-light">
                   Log in
